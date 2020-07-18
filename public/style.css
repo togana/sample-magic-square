@@ -16,6 +16,12 @@ body {
 .magic-square-container {
   width: 150px;
   height: 150px;
+  animation: magicSquare 8s linear infinite;
+}
+
+@keyframes magicSquare {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .magic-square-outline,
