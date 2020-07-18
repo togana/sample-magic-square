@@ -43,10 +43,10 @@ body {
 
 .magic-square-inner {
   position: absolute;
-  top: 1%;
-  left: 1%;
-  width: 98%;
-  height: 98%;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
   box-shadow: 0 0 5px 2px rgba(67, 34, 77, 90);
 }
 
@@ -96,4 +96,71 @@ body {
 
 .magic-square-inner::before {
   transform: rotate(45deg);
+}
+
+.magic-square-top,
+.magic-square-top-right,
+.magic-square-right,
+.magic-square-bottom-right,
+.magic-square-bottom,
+.magic-square-bottom-left,
+.magic-square-left,
+.magic-square-top-left {
+  font-size: 10px;
+  color: #ccc;
+}
+
+.magic-square-top {
+  position: absolute;
+  top: 2px;
+  left: calc(50% - 5px);
+}
+
+.magic-square-top-right {
+  position: absolute;
+  top: calc(25% - 14px);
+  right: calc(25% - 14px);
+  transform: rotate(45deg);
+}
+
+.magic-square-right {
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 4px;
+  transform: rotate(90deg);
+}
+
+.magic-square-bottom-right {
+  position: absolute;
+  right: calc(25% - 14px);
+  bottom: calc(25% - 14px);
+  transform: rotate(135deg);
+}
+
+.magic-square-bottom {
+  position: absolute;
+  bottom: 2px;
+  left: calc(50% - 5px);
+  transform: rotate(180deg);
+}
+
+.magic-square-bottom-left {
+  position: absolute;
+  bottom: calc(25% - 14px);
+  left: calc(25% - 14px);
+  transform: rotate(225deg);
+}
+
+.magic-square-left {
+  position: absolute;
+  top: calc(50% - 5px);
+  left: 4px;
+  transform: rotate(270deg);
+}
+
+.magic-square-top-left {
+  position: absolute;
+  top: calc(25% - 14px);
+  left: calc(25% - 14px);
+  transform: rotate(315deg);
 }
