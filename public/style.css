@@ -13,10 +13,14 @@ body {
   background-color: black;
 }
 
+.root-container {
+  transform: perspective(120px) rotateX(50deg);
+}
+
 .magic-square-container {
   width: 150px;
   height: 150px;
-  animation: magicSquare 8s linear infinite;
+  animation: magicSquare 7s linear infinite;
 }
 
 @keyframes magicSquare {
