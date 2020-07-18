@@ -19,7 +19,11 @@ body {
 }
 
 .magic-square-outline,
-.magic-square-inner {
+.magic-square-inner,
+.magic-square-inner-circle,
+.magic-square-inner-circle-top-left,
+.magic-square-inner-circle-bottom-left,
+.magic-square-inner-circle-right {
   position: relative;
   width: 100%;
   height: 100%;
@@ -33,6 +37,38 @@ body {
   left: 1%;
   width: 98%;
   height: 98%;
+}
+
+.magic-square-inner-circle {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+}
+
+.magic-square-inner-circle-top-left,
+.magic-square-inner-circle-bottom-left,
+.magic-square-inner-circle-right {
+  width: 60%;
+  height: 60%;
+}
+
+.magic-square-inner-circle-top-left {
+  top: 5%;
+  left: 5%;
+}
+
+.magic-square-inner-circle-bottom-left {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+.magic-square-inner-circle-right {
+  position: absolute;
+  top: 20%;
+  right: 0%;
 }
 
 .magic-square-inner::before,
