@@ -1,19 +1,25 @@
 * {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
   padding: 0;
   margin: 0;
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: black;
 }
 
 .magic-square-container {
-  box-sizing: border-box;
   width: 200px;
   height: 200px;
 }
 
-.magic-square {
+.magic-square-outline,
+.magic-square-inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -21,18 +27,25 @@ body {
   border-radius: 50%;
 }
 
-.magic-square::before,
-.magic-square::after {
+.magic-square-inner {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  width: 98%;
+  height: 98%;
+}
+
+.magic-square-inner::before,
+.magic-square-inner::after {
   position: absolute;
   top: 15%;
   left: 15%;
-  box-sizing: border-box;
   width: 70%;
   height: 70%;
   content: "";
   border: 1px solid white;
 }
 
-.magic-square::before {
+.magic-square-inner::before {
   transform: rotate(45deg);
 }
