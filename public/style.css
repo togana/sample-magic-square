@@ -20,3 +20,19 @@ body {
   border: 1px solid white;
   border-radius: 50%;
 }
+
+.magic-square::before,
+.magic-square::after {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  box-sizing: border-box;
+  width: 70%;
+  height: 70%;
+  content: "";
+  border: 1px solid white;
+}
+
+.magic-square::before {
+  transform: rotate(45deg);
+}
