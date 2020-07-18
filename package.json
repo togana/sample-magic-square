@@ -1,0 +1,16 @@
+{
+  "name": "sample-magic-square",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "togana <o.togana@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint:css": "stylelint --fix **/*.css"
+  },
+  "devDependencies": {
+    "stylelint": "^13.6.1",
+    "stylelint-config-recess-order": "^2.0.4",
+    "stylelint-config-standard": "^20.0.0"
+  }
+}
